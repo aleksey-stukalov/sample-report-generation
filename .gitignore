@@ -1,0 +1,12 @@
+.gradle
+.studio
+*.ipr
+*.iml
+*.iws
+build/*
+deploy/*
+!deploy/hsqldb
+modules/*/build/*
+out
+test-run
+.DS_Store

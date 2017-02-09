@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.sample.report.web.order.OrderBrowse"
+        focusComponent="ordersTable"
+        lookupComponent="ordersTable"
+        messagesPack="com.company.sample.report.web.order">
+    <dsContext>
+        <datasource id="orderDs"
+                    class="com.company.sample.report.entity.Order"
+                    view="order-full-view">
+            <collectionDatasource id="itemsDs"
+                                  property="items"/>
+        </datasource>
+        <groupDatasource id="ordersDs"
+                         class="com.company.sample.report.entity.Order"
+                         view="order-browse-view">
+            <query>
+                <![CDATA[select e from reportgeneration$Order e]]>
+            </query>
+        </groupDatasource>
+        <collectionDatasource id="customersDs"
+                              class="com.company.sample.report.entity.Customer"
+                              view="_minimal">
+            <query>
+                <![CDATA[select e from reportgeneration$Customer e]]>
+            </query>
+        </collectionDatasource>
+    </dsContext>
+    <actions>
+        <action id="save"
+                caption="mainMsg://actions.Ok"
+                icon="icons/ok.png"
+                invoke="save"
+                shortcut="CTRL-ENTER"/>
+        <action id="cancel"
+                caption="mainMsg://actions.Cancel"
+                icon="icons/cancel.png"
+                invoke="cancel"/>
+    </actions>
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <split id="split"
+               height="100%"
+               orientation="horizontal"
+               reversePosition="true"
+               width="100%">
+            <vbox id="lookupBox"
+                  expand="ordersTable"
+                  height="100%"
+                  margin="false,true,false,false"
+                  spacing="true">
+                <filter id="filter"
+                        applyTo="ordersTable"
+                        datasource="ordersDs">
+                    <properties include=".*"/>
+                </filter>
+                <groupTable id="ordersTable"
+                            width="100%">
+                    <actions>
+                        <action id="create"/>
+                        <action id="edit"/>
+                        <action id="remove"/>
+                    </actions>
+                    <columns>
+                        <column id="number"/>
+                        <column id="customer"/>
+                        <column id="totalPrice"/>
+                    </columns>
+                    <rows datasource="ordersDs"/>
+                    <rowsCount/>
+                    <buttonsPanel id="buttonsPanel"
+                                  alwaysVisible="true">
+                        <button id="createBtn"
+                                action="ordersTable.create"/>
+                        <button id="editBtn"
+                                action="ordersTable.edit"/>
+                        <button id="removeBtn"
+                                action="ordersTable.remove"/>
+                        <button id="reportButton"
+                                icon="icons/reports-print.png"/>
+                    </buttonsPanel>
+                </groupTable>
+            </vbox>
+            <vbox id="editBox"
+                  expand="tabSheetBox"
+                  height="100%"
+                  margin="false,false,false,true"
+                  spacing="true">
+                <vbox id="tabSheetBox">
+                    <tabSheet id="tabSheet"
+                              height="100%">
+                        <tab id="mainTab"
+                             caption="msg://mainTab"
+                             expand="itemsBox"
+                             margin="true"
+                             spacing="true">
+                            <fieldGroup id="fieldGroup"
+                                        datasource="orderDs">
+                                <column width="250px">
+                                    <field id="number"/>
+                                    <field id="customer"
+                                           optionsDatasource="customersDs"/>
+                                    <field id="date"/>
+                                </column>
+                            </fieldGroup>
+                            <groupBox id="itemsBox"
+                                      caption="msg://com.company.sample.report.entity/Order.items"
+                                      expand="itemsTable"
+                                      spacing="true">
+                                <table id="itemsTable"
+                                       width="100%">
+                                    <actions>
+                                        <action id="create"/>
+                                        <action id="edit"/>
+                                        <action id="remove"/>
+                                    </actions>
+                                    <columns>
+                                        <column id="product"/>
+                                        <column id="product.price"/>
+                                        <column id="quantity"/>
+                                        <column id="subTotal"/>
+                                    </columns>
+                                    <rows datasource="itemsDs"/>
+                                    <buttonsPanel>
+                                        <button action="itemsTable.create"/>
+                                        <button action="itemsTable.edit"/>
+                                        <button action="itemsTable.remove"/>
+                                    </buttonsPanel>
+                                </table>
+                                <hbox align="MIDDLE_RIGHT"
+                                      spacing="true">
+                                    <label id="labelTotalPrice"
+                                           align="MIDDLE_LEFT"
+                                           value="Total Price: "/>
+                                    <textField datasource="orderDs"
+                                               property="totalPrice"/>
+                                </hbox>
+                            </groupBox>
+                        </tab>
+                    </tabSheet>
+                </vbox>
+                <hbox id="actionsPane"
+                      align="TOP_RIGHT"
+                      enable="false"
+                      margin="false,true,false,true"
+                      spacing="true">
+                    <button id="saveBtn"
+                            action="save"/>
+                    <button id="cancelBtn"
+                            action="cancel"/>
+                </hbox>
+            </vbox>
+        </split>
+    </layout>
+</window>
