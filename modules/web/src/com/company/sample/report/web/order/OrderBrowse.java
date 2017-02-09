@@ -94,6 +94,8 @@ public class OrderBrowse extends AbstractLookup {
     @Inject
     private Button reportButton;
 
+
+
     @Override
     public void init(Map<String, Object> params) {
 
@@ -143,7 +145,16 @@ public class OrderBrowse extends AbstractLookup {
 
         disableEditControls();
 
+        //----------------------STANDARD SCREEN SCRIPT ENDS--------------------------//
+
+
+        /**
+         * Calculating total price for the order
+         */
         itemsDs.addCollectionChangeListener(e -> {
+            if (orderDs.getItem() == null)
+                return;
+
             BigDecimal totalPrice = itemsDs.getItems().stream()
                     .map(OrderItem::getSubTotal)
                     .reduce(BigDecimal.ZERO, BigDecimal::add);
@@ -151,7 +162,8 @@ public class OrderBrowse extends AbstractLookup {
             orderDs.getItem().setTotalPrice(totalPrice);
         });
 
-        //----------------------STANDARD SCREEN SCRIPT ENDS--------------------------//
+        LookupPickerField field = (LookupPickerField) fieldGroup.getFieldComponent("customer");
+        field.setRefreshOptionsOnLookupClose(true);
 
         /**
          * Adding action to be called when the report button is clicked

@@ -23,6 +23,7 @@ buildscript {
 
         classpath "com.haulmont.cuba:cuba-global:$cubaVersion"
         classpath "com.haulmont.reports:reports-global:$cubaVersion"
+        classpath "com.haulmont.charts:charts-global:$cubaVersion"
 
         
     }

@@ -66,6 +66,7 @@
                     <columns>
                         <column id="number"/>
                         <column id="customer"/>
+                        <column id="date"/>
                         <column id="totalPrice"/>
                     </columns>
                     <rows datasource="ordersDs"/>
