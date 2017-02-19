@@ -10,7 +10,10 @@
           extends="_local"
           name="order-full-view">
         <property name="customer"
-                  view="_local"/>
+                  view="_local">
+            <property name="logo"
+                      view="browse"/>
+        </property>
         <property name="items"
                   view="order-item-view"/>
     </view>
@@ -19,5 +22,11 @@
           name="order-browse-view">
         <property name="customer"
                   view="_minimal"/>
+    </view>
+    <view class="com.company.sample.report.entity.Customer"
+          extends="_local"
+          name="customer-edit-view">
+        <property name="logo"
+                  view="browse"/>
     </view>
 </views>

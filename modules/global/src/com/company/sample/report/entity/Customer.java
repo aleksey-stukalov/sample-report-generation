@@ -1,11 +1,10 @@
 package com.company.sample.report.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Column;
-import javax.persistence.Lob;
-import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.chile.core.annotations.NamePattern;
+import com.haulmont.cuba.core.entity.FileDescriptor;
+import com.haulmont.cuba.core.entity.StandardEntity;
+
+import javax.persistence.*;
 
 @NamePattern("%s|name")
 @Table(name = "REPORTGENERATION_CUSTOMER")
@@ -19,6 +18,19 @@ public class Customer extends StandardEntity {
     @Lob
     @Column(name = "BILLING_ADDRESS")
     protected String billingAddress;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "LOGO_ID")
+    protected FileDescriptor logo;
+
+    public void setLogo(FileDescriptor logo) {
+        this.logo = logo;
+    }
+
+    public FileDescriptor getLogo() {
+        return logo;
+    }
+
 
     public void setName(String name) {
         this.name = name;

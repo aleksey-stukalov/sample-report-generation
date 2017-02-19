@@ -47,6 +47,7 @@ create table REPORTGENERATION_CUSTOMER (
     --
     NAME varchar(255) not null,
     BILLING_ADDRESS longvarchar,
+    LOGO_ID varchar(36),
     --
     primary key (ID)
 )^

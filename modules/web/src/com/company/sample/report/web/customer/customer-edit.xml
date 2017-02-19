@@ -8,20 +8,43 @@
     <dsContext>
         <datasource id="customerDs"
                     class="com.company.sample.report.entity.Customer"
-                    view="_local"/>
+                    view="customer-edit-view"/>
     </dsContext>
     <dialogMode height="600"
                 width="800"/>
     <layout expand="windowActions"
             spacing="true">
-        <fieldGroup id="fieldGroup"
-                    datasource="customerDs">
-            <column width="250px">
-                <field id="name"/>
-                <field id="billingAddress"
-                       rows="5"/>
-            </column>
-        </fieldGroup>
+        <hbox spacing="true">
+            <groupBox caption="Company Info"
+                      height="100%"
+                      spacing="true">
+                <fieldGroup id="fieldGroup"
+                            datasource="customerDs">
+                    <column width="250px">
+                        <field id="name"/>
+                        <field id="billingAddress"
+                               rows="5"/>
+                    </column>
+                </fieldGroup>
+            </groupBox>
+            <groupBox id="groupBoxLogo"
+                      caption="Company logo"
+                      spacing="true">
+                <embedded id="imgLogo"
+                          align="TOP_CENTER"
+                          height="200px"/>
+                <upload id="customerUpload"
+                        accept="*.png,*.jpg"
+                        align="MIDDLE_CENTER"
+                        clearButtonIcon="icons/close.png"
+                        datasource="customerDs"
+                        dropZone="groupBoxLogo"
+                        fileStoragePutMode="IMMEDIATE"
+                        property="logo"
+                        showClearButton="true"
+                        uploadButtonIcon="icons/upload.png"/>
+            </groupBox>
+        </hbox>
         <frame id="windowActions"
                screen="editWindowActions"/>
     </layout>
