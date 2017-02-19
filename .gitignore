@@ -5,7 +5,7 @@
 *.iws
 build/*
 deploy/*
-!deploy/tomcat/work/app-core/filestorage
+!deploy/tomcat/work/app-core/filestorage/*
 !deploy/hsqldb
 modules/*/build/*
 out
