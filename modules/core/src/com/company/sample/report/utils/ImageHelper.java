@@ -26,16 +26,16 @@ public class ImageHelper {
         int originalWidth = image.getWidth();
         int originalHeight = image.getHeight();
 
-        double widthScaleFactor = width / originalWidth;
-        double heightScaleFactor = height / originalHeight;
+        double widthScaleFactor = (double) width / (double) originalWidth;
+        double heightScaleFactor = (double) height / (double) originalHeight;
         double scaleFactor = Math.min(widthScaleFactor, heightScaleFactor);
 
         int scaledWidth = (int) Math.round(originalWidth * scaleFactor);
         int scaledHeight = (int) Math.round(originalHeight * scaleFactor);
 
-        BufferedImage scaledImage = new BufferedImage(width, height, image.getType());
+        BufferedImage scaledImage = new BufferedImage(scaledWidth, scaledHeight, image.getType());
         Graphics2D g = scaledImage.createGraphics();
-        g.drawImage(image, (width - scaledWidth) / 2, (height - scaledHeight) / 2, scaledWidth, scaledHeight, null);
+        g.drawImage(image, 0, 0, scaledWidth, scaledHeight, null);
         g.dispose();
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
