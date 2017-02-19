@@ -1,7 +1,7 @@
 package com.company.sample.report.web.orderitem;
 
-import com.haulmont.cuba.gui.components.AbstractEditor;
 import com.company.sample.report.entity.OrderItem;
+import com.haulmont.cuba.gui.components.AbstractEditor;
 
 import java.math.BigDecimal;
 

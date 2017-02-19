@@ -1,14 +1,10 @@
 package com.company.sample.report.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Column;
-import javax.persistence.FetchType;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import com.haulmont.cuba.core.entity.StandardEntity;
 import com.haulmont.cuba.core.entity.annotation.Lookup;
 import com.haulmont.cuba.core.entity.annotation.LookupType;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Table(name = "REPORTGENERATION_ORDER_ITEM")
