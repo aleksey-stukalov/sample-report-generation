@@ -1,4 +1,106 @@
-/*C143*/SET SCHEMA PUBLIC
+/*C2*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C144*/SET SCHEMA PUBLIC
+/*C3*/SET SCHEMA PUBLIC
 DISCONNECT
+/*C4*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C6*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C7*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C9*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C10*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C11*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C12*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C13*/SET SCHEMA PUBLIC
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:13:17.304000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:14:17.303000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:15:17.303000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:16:17.304000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:17:17.305000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:18:17.307000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:19:17.310000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:20:17.310000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:21:17.311000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:22:17.315000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:23:17.317000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:24:17.321000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:25:17.323000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:26:17.331000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:27:17.338000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:28:17.341000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:29:17.348000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:30:17.348000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:31:17.349000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:32:17.350000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:33:17.350000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:34:17.350000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:35:17.350000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:36:17.353000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:37:17.354000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
+DELETE FROM REPORT_REPORT WHERE ID='11227ff1-eb7b-034d-b3f6-c1830cab6c08'
+INSERT INTO REPORT_REPORT VALUES('11227ff1-eb7b-034d-b3f6-c1830cab6c08','2017-02-09 20:14:38.325000','admin',41,'2017-03-13 16:38:12.841000','admin','[CHART] Income from customer by date',NULL,NULL,NULL,'4e083530-0b9c-11e1-9b41-6bdaa41bff94',10,NULL,'{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08","valuesFormats":[{"metaClass":"report$ReportValueFormat","id":"c71c6293-3ba8-f37d-fe7e-cd17afc0fde2","formatString":"dd/MM/yyyy","valueName":"orderData.order_date","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"}}],"templates":[{"metaClass":"report$ReportTemplate","id":"5ee03091-1b10-392e-86c1-2ce6d2a4f610","code":"DEFAULT","customDefinedBy":"100","custom":"false","version":"2","reportOutputType":"70","customDefinition":"","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"name":".chart"}],"roles":[],"defaultTemplate":{"metaClass":"report$ReportTemplate","id":"5ee03091-1b10-392e-86c1-2ce6d2a4f610"},"bands":[{"metaClass":"report$BandDefinition","id":"5a27969e-811b-79b8-861b-7d41180847f9","orientation":"1","childrenBandDefinitions":[],"name":"orderData","parentBandDefinition":{"metaClass":"report$BandDefinition","id":"08869075-903a-0440-6e85-8cc51ea2e992","orientation":"","childrenBandDefinitions":[{"metaClass":"report$BandDefinition","id":"5a27969e-811b-79b8-861b-7d41180847f9"}],"name":"Root","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"dataSets":[],"position":"0"},"report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"dataSets":[{"metaClass":"report$DataSet","id":"9f70fe1d-0043-6189-5996-72404de4b7f5","entityParamName":"entity","name":"orderData","listEntitiesParamName":"entities","useExistingView":"false","bandDefinition":{"metaClass":"report$BandDefinition","id":"5a27969e-811b-79b8-861b-7d41180847f9"},"text":"select \n   o.date as order_date,\n   SUM(o.totalPrice) as total_payment\nfrom reportgeneration$Order o\nwhere o.customer.id \u005cu003d ${parameter_customer}\ngroup by o.date\norder by o.date","type":"20","view":"null"}],"position":"0"},{"metaClass":"report$BandDefinition","id":"08869075-903a-0440-6e85-8cc51ea2e992"}],"version":"40","inputParameters":[{"metaClass":"report$ReportInputParameter","id":"9a232ac1-75da-216c-9d54-c039f766553b","entityMetaClass":"reportgeneration$Customer","parameterClassName":"com.company.sample.report.entity.Customer","type":"30","required":"true","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"name":"Customer","alias":"parameter_customer","position":"0"}],"reportType":"10","reportScreens":[],"name":"[CHART] Income from customer by date","group":{"metaClass":"report$ReportGroup","id":"4e083530-0b9c-11e1-9b41-6bdaa41bff94","localeNames":"en\u005cu003dGeneral\nru\u005cu003d\u041e\u0431\u0449\u0438\u0435","code":"ReportGroup.default","title":"General","version":"0"}}')
+DELETE FROM REPORT_REPORT WHERE ID='11227ff1-eb7b-034d-b3f6-c1830cab6c08'
+INSERT INTO REPORT_REPORT VALUES('11227ff1-eb7b-034d-b3f6-c1830cab6c08','2017-02-09 20:14:38.325000','admin',42,'2017-03-13 16:38:12.970000','admin','[CHART] Income from customer by date',NULL,NULL,NULL,'4e083530-0b9c-11e1-9b41-6bdaa41bff94',10,'5ee03091-1b10-392e-86c1-2ce6d2a4f610','{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08","valuesFormats":[{"metaClass":"report$ReportValueFormat","id":"c71c6293-3ba8-f37d-fe7e-cd17afc0fde2","formatString":"dd/MM/yyyy","valueName":"orderData.order_date","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"}}],"templates":[{"metaClass":"report$ReportTemplate","id":"5ee03091-1b10-392e-86c1-2ce6d2a4f610","code":"DEFAULT","customDefinedBy":"100","custom":"false","version":"2","reportOutputType":"70","customDefinition":"","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"name":".chart"}],"roles":[],"defaultTemplate":{"metaClass":"report$ReportTemplate","id":"5ee03091-1b10-392e-86c1-2ce6d2a4f610"},"bands":[{"metaClass":"report$BandDefinition","id":"5a27969e-811b-79b8-861b-7d41180847f9","orientation":"1","childrenBandDefinitions":[],"name":"orderData","parentBandDefinition":{"metaClass":"report$BandDefinition","id":"08869075-903a-0440-6e85-8cc51ea2e992","orientation":"","childrenBandDefinitions":[{"metaClass":"report$BandDefinition","id":"5a27969e-811b-79b8-861b-7d41180847f9"}],"name":"Root","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"dataSets":[],"position":"0"},"report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"dataSets":[{"metaClass":"report$DataSet","id":"9f70fe1d-0043-6189-5996-72404de4b7f5","entityParamName":"entity","name":"orderData","listEntitiesParamName":"entities","useExistingView":"false","bandDefinition":{"metaClass":"report$BandDefinition","id":"5a27969e-811b-79b8-861b-7d41180847f9"},"text":"select \n   o.date as order_date,\n   SUM(o.totalPrice) as total_payment\nfrom reportgeneration$Order o\nwhere o.customer.id \u005cu003d ${parameter_customer}\ngroup by o.date\norder by o.date","type":"20","view":"null"}],"position":"0"},{"metaClass":"report$BandDefinition","id":"08869075-903a-0440-6e85-8cc51ea2e992"}],"version":"40","inputParameters":[{"metaClass":"report$ReportInputParameter","id":"9a232ac1-75da-216c-9d54-c039f766553b","entityMetaClass":"reportgeneration$Customer","parameterClassName":"com.company.sample.report.entity.Customer","type":"30","required":"true","report":{"metaClass":"report$Report","id":"11227ff1-eb7b-034d-b3f6-c1830cab6c08"},"name":"Customer","alias":"parameter_customer","position":"0"}],"reportType":"10","reportScreens":[],"name":"[CHART] Income from customer by date","group":{"metaClass":"report$ReportGroup","id":"4e083530-0b9c-11e1-9b41-6bdaa41bff94","localeNames":"en\u005cu003dGeneral\nru\u005cu003d\u041e\u0431\u0449\u0438\u0435","code":"ReportGroup.default","title":"General","version":"0"}}')
+COMMIT
+DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2017-03-13 16:38:17.355000',NULL,'localhost:8080/app-core',TRUE,NULL)
+COMMIT
