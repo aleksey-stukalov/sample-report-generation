@@ -34,6 +34,7 @@ public class Order extends StandardEntity {
     @Composition
     @OnDelete(DeletePolicy.CASCADE)
     @OneToMany(mappedBy = "order")
+    @OrderBy(value = "product")
     protected List<OrderItem> items;
 
     @Column(name = "TOTAL_PRICE")

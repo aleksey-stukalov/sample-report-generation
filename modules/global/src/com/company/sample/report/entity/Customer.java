@@ -16,7 +16,7 @@ public class Customer extends StandardEntity {
     protected String name;
 
     @Lob
-    @Column(name = "BILLING_ADDRESS")
+    @Column(name = "BILLING_ADDRESS", nullable = false)
     protected String billingAddress;
 
     @ManyToOne(fetch = FetchType.LAZY)
