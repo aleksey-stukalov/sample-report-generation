@@ -46,7 +46,7 @@ create table REPORTGENERATION_CUSTOMER (
     DELETED_BY varchar(50),
     --
     NAME varchar(255) not null,
-    BILLING_ADDRESS longvarchar,
+    BILLING_ADDRESS longvarchar not null,
     LOGO_ID varchar(36),
     --
     primary key (ID)

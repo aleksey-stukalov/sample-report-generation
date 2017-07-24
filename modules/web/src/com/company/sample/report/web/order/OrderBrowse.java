@@ -3,6 +3,7 @@ package com.company.sample.report.web.order;
 import com.company.sample.report.entity.Order;
 import com.company.sample.report.entity.OrderItem;
 import com.haulmont.cuba.core.entity.Entity;
+import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.ComponentsHelper;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.components.actions.CreateAction;
@@ -94,10 +95,13 @@ public class OrderBrowse extends AbstractLookup {
     @Inject
     private Button reportButton;
 
-
+    @Inject
+    private UserSessionSource userSessionSource;
 
     @Override
     public void init(Map<String, Object> params) {
+
+        userSessionSource.getUserSession().getUser().getLogin();
 
         /**
          * Adding {@link Datasource.ItemChangeListener} to {@link ordersDs}
