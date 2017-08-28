@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<fts-config xmlns="http://schemas.haulmont.com/cuba/fts.xsd">
+    <entities>
+        <entity class="com.company.sample.report.entity.Product">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.company.sample.report.entity.OrderItem">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.company.sample.report.entity.Customer">
+            <include re=".*"/>
+        </entity>
+        <entity class="com.company.sample.report.entity.Order">
+            <include re=".*"/>
+        </entity>
+    </entities>
+</fts-config>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<services xmlns="http://schemas.haulmont.com/cuba/rest-services-v2.xsd">
+    <service name="reportgeneration_ReportingRestService">
+        <method name="generateInvoice">
+            <param name="orderId"/>
+            <param name="fileName"/>
+        </method>
+    </service>
+</services>

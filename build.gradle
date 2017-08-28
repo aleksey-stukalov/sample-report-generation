@@ -54,6 +54,7 @@ dependencies {
     appComponent("com.haulmont.cuba:cuba-global:$cubaVersion")
     appComponent("com.haulmont.reports:reports-global:$cubaVersion")
     appComponent("com.haulmont.charts:charts-global:$cubaVersion")
+    appComponent("com.haulmont.fts:fts-global:$cubaVersion")
 }
 
 
