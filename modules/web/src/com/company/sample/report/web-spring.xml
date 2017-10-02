@@ -12,6 +12,8 @@
             <map>
                 <entry key="reportgeneration_ReportingRestService"
                        value="com.company.sample.report.service.ReportingRestService"/>
+                <entry key="reportgeneration_QRCodeService"
+                       value="com.company.sample.report.service.QRCodeService"/>
             </map>
         </property>
     </bean>

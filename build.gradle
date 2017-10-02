@@ -1,6 +1,6 @@
 
 buildscript {
-    ext.cubaVersion = '6.6.2'
+    ext.cubaVersion = '6.6.4'
     repositories {
         maven {
             url 'https://repo.cuba-platform.com/content/groups/work'
@@ -98,6 +98,7 @@ configure(coreModule) {
         provided(servletApi)
         jdbc(hsql)
         testRuntime(hsql)
+        compile('com.google.zxing:core:2.0')
 
     }
 

@@ -2,9 +2,11 @@ package com.company.sample.report.web.order;
 
 import com.company.sample.report.entity.Order;
 import com.company.sample.report.entity.OrderItem;
+import com.haulmont.bali.util.ParamsMap;
 import com.haulmont.cuba.core.entity.Entity;
 import com.haulmont.cuba.core.global.UserSessionSource;
 import com.haulmont.cuba.gui.ComponentsHelper;
+import com.haulmont.cuba.gui.WindowManager;
 import com.haulmont.cuba.gui.components.*;
 import com.haulmont.cuba.gui.components.actions.CreateAction;
 import com.haulmont.cuba.gui.components.actions.EditAction;
@@ -103,7 +105,7 @@ public class OrderBrowse extends AbstractLookup {
 
         userSessionSource.getUserSession().getUser().getLogin();
 
-        /**
+        /*
          * Adding {@link Datasource.ItemChangeListener} to {@link ordersDs}
          * The listener reloads the selected record with the specified view and sets it to {@link orderDs}
          */
@@ -114,7 +116,7 @@ public class OrderBrowse extends AbstractLookup {
             }
         });
 
-        /**
+        /*
          * Adding {@link CreateAction} to {@link ordersTable}
          * The listener removes selection in {@link ordersTable}, sets a newly created item to {@link orderDs}
          * and enables controls for record editing
@@ -128,7 +130,7 @@ public class OrderBrowse extends AbstractLookup {
             }
         });
 
-        /**
+        /*
          * Adding {@link EditAction} to {@link ordersTable}
          * The listener enables controls for record editing
          */
@@ -141,7 +143,7 @@ public class OrderBrowse extends AbstractLookup {
             }
         });
 
-        /**
+        /*
          * Setting {@link RemoveAction#afterRemoveHandler} for {@link ordersTableRemove}
          * to reset record, contained in {@link orderDs}
          */
@@ -152,7 +154,7 @@ public class OrderBrowse extends AbstractLookup {
         //----------------------STANDARD SCREEN SCRIPT ENDS--------------------------//
 
 
-        /**
+        /*
          * Calculating total price for the order
          */
         itemsDs.addCollectionChangeListener(e -> {
@@ -169,7 +171,7 @@ public class OrderBrowse extends AbstractLookup {
         LookupPickerField field = (LookupPickerField) fieldGroup.getFieldComponent("customer");
         field.setRefreshOptionsOnLookupClose(true);
 
-        /**
+        /*
          * Adding action to be called when the report button is clicked
          */
         TablePrintFormAction action = new TablePrintFormAction("printInvoiceAction", ordersTable);
@@ -238,9 +240,19 @@ public class OrderBrowse extends AbstractLookup {
                 ((FieldGroup) component).setEditable(enabled);
             } else if (component instanceof Table) {
                 ((Table) component).getActions().forEach(action -> action.setEnabled(enabled));
+            } else if (component instanceof Field) {
+                component.setEnabled(enabled);
             }
         });
         actionsPane.setEnabled(enabled);
         lookupBox.setEnabled(!enabled);
+    }
+
+    public void onShowQRCodeClick() {
+        if (orderDs.getItem() != null) {
+            openWindow("qr-code-screen",
+                    WindowManager.OpenType.NEW_WINDOW,
+                    ParamsMap.of("orderId", orderDs.getItem().getId()));
+        }
     }
 }

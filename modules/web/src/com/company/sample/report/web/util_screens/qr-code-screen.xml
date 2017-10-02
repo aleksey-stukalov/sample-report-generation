@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        caption="msg://caption"
+        class="com.company.sample.report.web.util_screens.QrCodeScreen"
+        messagesPack="com.company.sample.report.web.util_screens">
+    <dialogMode closeable="true"
+                forceDialog="true"
+                height="500"
+                width="500"/>
+    <layout margin="true"
+            spacing="true">
+        <image id="image"
+               height="100%"
+               width="100%"/>
+    </layout>
+</window>

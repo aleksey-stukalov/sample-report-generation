@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<studio>
+    <settings>
+        <disabledLayoutAnalysisScreens/>
+    </settings>
+    <screenDesigner>
+        <screen module="web"
+                previewMode="true"
+                reference="com/company/sample/report/web/util_screens/qr-code-screen.xml"/>
+    </screenDesigner>
+</studio>

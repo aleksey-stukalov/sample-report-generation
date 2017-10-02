@@ -13,4 +13,6 @@
             template="com/company/sample/report/web/customer/customer-edit.xml"/>
     <screen id="reportgeneration$Order.browse"
             template="com/company/sample/report/web/order/order-browse.xml"/>
+    <screen id="qr-code-screen"
+            template="com/company/sample/report/web/util_screens/qr-code-screen.xml"/>
 </screen-config>
