@@ -16,4 +16,4 @@ Useful links:
 - [Files Downloading](https://doc.cuba-platform.com/manual-6.6/rest_api_v2_ex_file_download.html)
 
 #### QR Code support
-The application uses the [zxing](https://github.com/zxing/zxing) library to gerenrate barcodes and QR codes. The application provides the [service](https://github.com/aleksey-stukalov/sample-report-generation/blob/fd442bb73dd6f29552c7da1713444fc2d59cd23e/modules/core/src/com/company/sample/report/service/QRCodeServiceBean.java) to gerenrate QR codes. The _[DOCX2PDF] Invoice report_ is using this service to include a QR code into the report.
+The application uses the [zxing](https://github.com/zxing/zxing) library to generate barcodes and QR codes. The application provides the [service](https://github.com/aleksey-stukalov/sample-report-generation/blob/fd442bb73dd6f29552c7da1713444fc2d59cd23e/modules/core/src/com/company/sample/report/service/QRCodeServiceBean.java) to generate QR codes. The _[DOCX2PDF] Invoice report_ is using this service to include a QR code into the report.
