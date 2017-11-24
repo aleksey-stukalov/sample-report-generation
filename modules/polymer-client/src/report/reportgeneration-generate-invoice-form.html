@@ -18,13 +18,21 @@
       paper-card {
         display: block;
       }
+      paper-card[hidden] {
+        display: none;
+      }
     </style>
 
     <cuba-entities entity-name="reportgeneration$Order" view="_local" data="{{orders}}"></cuba-entities>
 
-    <paper-card heading="Generate Invoice">
-      <div class="card-content"> 
-        <cuba-service-form id="form" service-name="reportgeneration_ReportingRestService" method="generateInvoice" server-errors="{{serverErrors}}" params="[[serviceParams]]"> 
+    <paper-card heading="Generate Invoice" hidden$="[[invoiceFileDescriptor]]">
+      <div class="card-content">
+        <cuba-service-form id="form"
+                           service-name="reportgeneration_ReportingRestService"
+                           method="generateInvoice"
+                           server-errors="{{serverErrors}}"
+                           params="[[serviceParams]]"
+                           on-cuba-form-response="_handleReportGeneration">
           <vaadin-combo-box label="Order"
                             items="[[orders]]"
                             item-value-path="id"
@@ -34,15 +42,27 @@
                        label="File name"
                        error-message="[[serverErrors.fileName]]"
                        invalid="[[_isInvalid(serverErrors.fileName)]]">
-          </paper-input> 
-        </cuba-service-form> 
-      </div> 
-      <div class="card-actions"> 
+          </paper-input>
+        </cuba-service-form>
+      </div>
+      <div class="card-actions">
         <paper-button on-tap="_submit">
-           [[msg('Submit')]] 
-        </paper-button> 
-      </div> 
-    </paper-card> 
+          [[msg('Submit')]]
+        </paper-button>
+      </div>
+    </paper-card>
+
+    <template is="dom-if" if="[[invoiceFileDescriptor]]">
+      <paper-card heading="Your invoice is ready">
+        <div class="card-content">
+          <a href$="[[_computeDownloadUrl(invoiceFileDescriptor.id)]]" target="_blank">[[invoiceFileDescriptor.name]]</a>
+        </div>
+        <div class="card-actions">
+          <paper-button on-tap="_done">Done</paper-button>
+        </div>
+      </paper-card>
+    </template>
+
   </template> 
   <script>
     Polymer({
@@ -56,12 +76,37 @@
             orderId: null,
             fileName: null
           }
+        },
+
+        invoiceFileDescriptor: {
+          type: Object,
+          value: null
         }
-      
       },
+
       _submit: function() {
         this.$.form.submit();
       },
+
+      _done: function() {
+        this.invoiceFileDescriptor = null;
+      },
+
+      _handleReportGeneration: function(event) {
+        this.invoiceFileDescriptor = {
+          id: event.detail.response,
+          name: this.serviceParams.fileName
+        }
+      },
+
+      _computeDownloadUrl: function(fileDescriptorId) {
+        var url = this.app.apiUrl + 'v2/files/' + fileDescriptorId;
+        if (this.app.restApiToken) {
+          url += '?access_token=' + this.app.restApiToken;
+        }
+        return url;
+      },
+
       _isInvalid: function(err) {
         return typeof err !== 'undefined';
       }

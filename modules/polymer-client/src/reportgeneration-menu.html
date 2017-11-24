@@ -27,10 +27,10 @@
     <app-route route="{{route}}" pattern="/:page" data="{{routeData}}"> 
     </app-route> 
     <paper-listbox attr-for-selected="data-path" selected="[[_computeSelectedItem(routeData.page)]]"> 
-      <paper-icon-item data-path="" on-tap="navigate">
-        <iron-icon icon="info-outline" slot="item-icon" item-icon></iron-icon> [[msg('Invoices')]]
-      </paper-icon-item>
-    </paper-listbox> 
+      <paper-icon-item data-path="" on-tap="navigate"> 
+        <iron-icon icon="info-outline" slot="item-icon" item-icon></iron-icon> [[msg('Invoices')]] 
+      </paper-icon-item>  
+    </paper-listbox>
   </template> 
   <script>
     Polymer({

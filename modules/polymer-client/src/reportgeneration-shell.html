@@ -20,7 +20,7 @@
 <link rel="import" href="shared-styles.html"> 
 <link rel="import" href="reportgeneration-menu.html"> 
 <link rel="import" href="reportgeneration-user-menu.html"> 
-<link rel="import" href="reportgeneration-login.html">
+<link rel="import" href="reportgeneration-login.html"> 
 <link rel="import" href="report/reportgeneration-generate-invoice-form.html">
 <dom-module id="reportgeneration-shell"> 
   <template> 
@@ -67,7 +67,7 @@
         <app-drawer id="drawer" slot="drawer"> 
           <app-toolbar> 
             <div class="title">
-              [[msg('Report Generation')]]
+               [[msg('Report Generation')]] 
             </div> 
           </app-toolbar> 
           <div class="content fit drawer-content"> 
@@ -82,7 +82,7 @@
               <reportgeneration-user-menu></reportgeneration-user-menu> 
             </app-toolbar> 
           </app-header> 
-          <iron-lazy-pages selected="[[_computeSelectedPage(routeData.page)]]" attr-for-selected="data-route" selected-attribute="active" class="content fit">
+          <iron-lazy-pages selected="[[_computeSelectedPage(routeData.page)]]" attr-for-selected="data-route" selected-attribute="active" class="content fit"> 
             <reportgeneration-generate-invoice-form route="[[routeTail]]" data-route=""></reportgeneration-generate-invoice-form>
           </iron-lazy-pages> 
         </app-header-layout> 
