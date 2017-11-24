@@ -1,0 +1,115 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html"> 
+<link rel="import" href="../../bower_components/cuba-app/cuba-localize-behavior.html"> 
+<link rel="import" href="../../bower_components/cuba-form/cuba-service-form.html"> 
+<link rel="import" href="../../bower_components/cuba-data/cuba-entities.html">
+<link rel="import" href="../../bower_components/cuba-styles/cuba-styles.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html"> 
+<link rel="import" href="../../bower_components/paper-button/paper-button.html"> 
+<link rel="import" href="../../bower_components/vaadin-combo-box/vaadin-combo-box.html">
+<link rel="import" href="../shared-styles.html">
+<dom-module id="reportgeneration-generate-invoice-form"> 
+  <template> 
+    <style include="cuba-styles"></style> 
+    <style include="shared-styles"></style> 
+    <style>
+      :host {
+        display: block;
+      }
+      paper-card {
+        display: block;
+      }
+      paper-card[hidden] {
+        display: none;
+      }
+    </style>
+
+    <cuba-entities entity-name="reportgeneration$Order" view="_local" data="{{orders}}"></cuba-entities>
+
+    <paper-card heading="Generate Invoice" hidden$="[[invoiceFileDescriptor]]">
+      <div class="card-content">
+        <cuba-service-form id="form"
+                           service-name="reportgeneration_ReportingRestService"
+                           method="generateInvoice"
+                           server-errors="{{serverErrors}}"
+                           params="[[serviceParams]]"
+                           on-cuba-form-response="_handleReportGeneration">
+          <vaadin-combo-box label="Order"
+                            items="[[orders]]"
+                            item-value-path="id"
+                            item-label-path="number"
+                            value="{{serviceParams.orderId}}"></vaadin-combo-box>
+          <paper-input value="{{serviceParams.fileName}}"
+                       label="File name"
+                       error-message="[[serverErrors.fileName]]"
+                       invalid="[[_isInvalid(serverErrors.fileName)]]">
+          </paper-input>
+        </cuba-service-form>
+      </div>
+      <div class="card-actions">
+        <paper-button on-tap="_submit">
+          [[msg('Submit')]]
+        </paper-button>
+      </div>
+    </paper-card>
+
+    <template is="dom-if" if="[[invoiceFileDescriptor]]">
+      <paper-card heading="Your invoice is ready">
+        <div class="card-content">
+          <a href$="[[_computeDownloadUrl(invoiceFileDescriptor.id)]]" target="_blank">[[invoiceFileDescriptor.name]]</a>
+        </div>
+        <div class="card-actions">
+          <paper-button on-tap="_done">Done</paper-button>
+        </div>
+      </paper-card>
+    </template>
+
+  </template> 
+  <script>
+    Polymer({
+      is: 'reportgeneration-generate-invoice-form',
+      behaviors: [CubaLocalizeBehavior],
+      properties: {
+      
+        serviceParams: {
+          type: Object,
+          value: {
+            orderId: null,
+            fileName: null
+          }
+        },
+
+        invoiceFileDescriptor: {
+          type: Object,
+          value: null
+        }
+      },
+
+      _submit: function() {
+        this.$.form.submit();
+      },
+
+      _done: function() {
+        this.invoiceFileDescriptor = null;
+      },
+
+      _handleReportGeneration: function(event) {
+        this.invoiceFileDescriptor = {
+          id: event.detail.response,
+          name: this.serviceParams.fileName
+        }
+      },
+
+      _computeDownloadUrl: function(fileDescriptorId) {
+        var url = this.app.apiUrl + 'v2/files/' + fileDescriptorId;
+        if (this.app.restApiToken) {
+          url += '?access_token=' + this.app.restApiToken;
+        }
+        return url;
+      },
+
+      _isInvalid: function(err) {
+        return typeof err !== 'undefined';
+      }
+    });
+  </script> 
+</dom-module>
