@@ -17,7 +17,7 @@ Useful links:
 
 #### Using from Polymer client
 The Polymer client module contains a showcase of how to invoke ReportingRestService to generate a report and how to provide a link for downloading the result from the File Storage. 
-See `modules/polymer-client/src/report/reportgeneration-generate-invoice-form.html` component.
+See [reportgeneration-generate-invoice-form.html](https://github.com/aleksey-stukalov/sample-report-generation/blob/master/modules/polymer-client/src/report/reportgeneration-generate-invoice-form.html) component.
 
 #### QR Code support
 The application uses the [zxing](https://github.com/zxing/zxing) library to generate barcodes and QR codes. The application provides the [service](https://github.com/aleksey-stukalov/sample-report-generation/blob/fd442bb73dd6f29552c7da1713444fc2d59cd23e/modules/core/src/com/company/sample/report/service/QRCodeServiceBean.java) to generate QR codes. The _[DOCX2PDF] Invoice report_ is using this service to include a QR code into the report.
