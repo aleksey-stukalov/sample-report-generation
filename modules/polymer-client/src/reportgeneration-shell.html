@@ -1,32 +1,29 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
-<!-- Ensure Web Animations polyfill is loaded since neon-animation 2.0 doesn't import it -->
-<link rel="import" href="../bower_components/neon-animation/web-animations.html">
-<link rel="import" href="../bower_components/app-route/app-location.html">
-<link rel="import" href="../bower_components/app-route/app-route.html">
-<link rel="import" href="../bower_components/app-layout/app-layout.html">
-<link rel="import" href="../bower_components/iron-icons/iron-icons.html">
-<link rel="import" href="../bower_components/iron-lazy-pages/iron-lazy-pages.html">
-<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html">
-<link rel="import" href="../bower_components/paper-input/paper-input.html">
-<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html">
-<link rel="import" href="../bower_components/cuba-app/cuba-app.html">
-<link rel="import" href="../bower_components/cuba-app/cuba-app-aware-behavior.html">
-<link rel="import" href="../bower_components/cuba-app/cuba-localize-behavior.html">
-<link rel="import" href="../bower_components/cuba-styles/cuba-styles.html">
-<link rel="import" href="../bower_components/cuba-data/cuba-data.html">
-<link rel="import" href="../bower_components/cuba-form/cuba-form.html">
-<link rel="import" href="../bower_components/vaadin-combo-box/vaadin-combo-box.html">
-<link rel="import" href="../bower_components/vaadin-date-picker/vaadin-date-picker-light.html">
-<link rel="import" href="shared-styles.html">
-
-<link rel="import" href="reportgeneration-menu.html">
-<link rel="import" href="reportgeneration-user-menu.html">
+<link rel="import" href="../bower_components/polymer/polymer.html"> 
+<!-- Ensure Web Animations polyfill is loaded since neon-animation 2.0 doesn't import it --> 
+<link rel="import" href="../bower_components/neon-animation/web-animations.html"> 
+<link rel="import" href="../bower_components/app-route/app-location.html"> 
+<link rel="import" href="../bower_components/app-route/app-route.html"> 
+<link rel="import" href="../bower_components/app-layout/app-layout.html"> 
+<link rel="import" href="../bower_components/iron-icons/iron-icons.html"> 
+<link rel="import" href="../bower_components/iron-lazy-pages/iron-lazy-pages.html"> 
+<link rel="import" href="../bower_components/paper-icon-button/paper-icon-button.html"> 
+<link rel="import" href="../bower_components/paper-input/paper-input.html"> 
+<link rel="import" href="../bower_components/paper-checkbox/paper-checkbox.html"> 
+<link rel="import" href="../bower_components/cuba-app/cuba-app.html"> 
+<link rel="import" href="../bower_components/cuba-app/cuba-app-aware-behavior.html"> 
+<link rel="import" href="../bower_components/cuba-app/cuba-localize-behavior.html"> 
+<link rel="import" href="../bower_components/cuba-styles/cuba-styles.html"> 
+<link rel="import" href="../bower_components/cuba-data/cuba-data.html"> 
+<link rel="import" href="../bower_components/cuba-form/cuba-form.html"> 
+<link rel="import" href="../bower_components/vaadin-combo-box/vaadin-combo-box.html"> 
+<link rel="import" href="../bower_components/vaadin-date-picker/vaadin-date-picker-light.html"> 
+<link rel="import" href="shared-styles.html"> 
+<link rel="import" href="reportgeneration-menu.html"> 
+<link rel="import" href="reportgeneration-user-menu.html"> 
 <link rel="import" href="reportgeneration-login.html">
-<link rel="import" href="home/reportgeneration-home.html">
-
-
-<dom-module id="reportgeneration-shell">
-  <template>
+<link rel="import" href="report/reportgeneration-generate-invoice-form.html">
+<dom-module id="reportgeneration-shell"> 
+  <template> 
     <style include="shared-styles">
       :host {
         display: block;
@@ -55,58 +52,43 @@
           padding: 0;
         }
       }
-    </style>
-
-    <cuba-app api-url="[[apiUrl]]"
-              on-cuba-token-expired="_handleTokenExpired">
-    </cuba-app>
-
-
-    <app-location route="{{route}}" use-hash-as-path></app-location>
-    <app-route route="{{route}}"
-               pattern="/:page"
-               data="{{routeData}}"
-               tail="{{routeTail}}">
-    </app-route>
-
-    <template is="dom-if" if="[[!authenticated]]">
-      <reportgeneration-login on-cuba-login-success="_handleLogin">
-      </reportgeneration-login>
-    </template>
-
-    <template is="dom-if" if="[[authenticated]]" restamp="true">
-      <app-drawer-layout id="drawerLayout" fullbleed>
-
-        <app-drawer id="drawer" slot="drawer">
-          <app-toolbar>
-            <div class="title">[[msg('Sample-report-generation')]]</div>
-          </app-toolbar>
-          <div class="content fit drawer-content">
-            <reportgeneration-menu on-menu-navigate="_closeDrawer"></reportgeneration-menu>
-          </div>
-        </app-drawer>
-
-        <app-header-layout main>
-          <app-header slot="header" fixed>
-            <app-toolbar class="main-toolbar">
-              <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-              <div main-title></div>
-              <reportgeneration-user-menu></reportgeneration-user-menu>
-            </app-toolbar>
-          </app-header>
-          <iron-lazy-pages
-            selected="[[_computeSelectedPage(routeData.page)]]"
-            attr-for-selected="data-route"
-            selected-attribute="active"
-            class="content fit">
-              <reportgeneration-home data-route=""></reportgeneration-home>
-          </iron-lazy-pages>
-        </app-header-layout>
-
-      </app-drawer-layout>
-    </template>
-
-  </template>
+    </style> 
+    <cuba-app api-url="[[apiUrl]]" on-cuba-token-expired="_handleTokenExpired"> 
+    </cuba-app> 
+    <app-location route="{{route}}" use-hash-as-path></app-location> 
+    <app-route route="{{route}}" pattern="/:page" data="{{routeData}}" tail="{{routeTail}}"> 
+    </app-route> 
+    <template is="dom-if" if="[[!authenticated]]"> 
+      <reportgeneration-login on-cuba-login-success="_handleLogin"> 
+      </reportgeneration-login> 
+    </template> 
+    <template is="dom-if" if="[[authenticated]]" restamp="true"> 
+      <app-drawer-layout id="drawerLayout" fullbleed> 
+        <app-drawer id="drawer" slot="drawer"> 
+          <app-toolbar> 
+            <div class="title">
+              [[msg('Report Generation')]]
+            </div> 
+          </app-toolbar> 
+          <div class="content fit drawer-content"> 
+            <reportgeneration-menu on-menu-navigate="_closeDrawer"></reportgeneration-menu> 
+          </div> 
+        </app-drawer> 
+        <app-header-layout main> 
+          <app-header slot="header" fixed> 
+            <app-toolbar class="main-toolbar"> 
+              <paper-icon-button icon="menu" drawer-toggle></paper-icon-button> 
+              <div main-title></div> 
+              <reportgeneration-user-menu></reportgeneration-user-menu> 
+            </app-toolbar> 
+          </app-header> 
+          <iron-lazy-pages selected="[[_computeSelectedPage(routeData.page)]]" attr-for-selected="data-route" selected-attribute="active" class="content fit">
+            <reportgeneration-generate-invoice-form route="[[routeTail]]" data-route=""></reportgeneration-generate-invoice-form>
+          </iron-lazy-pages> 
+        </app-header-layout> 
+      </app-drawer-layout> 
+    </template> 
+  </template> 
   <script>
     Polymer({
       is: 'reportgeneration-shell',
@@ -158,5 +140,5 @@
         this.set("route.path", detail);
       }
     });
-  </script>
+  </script> 
 </dom-module>

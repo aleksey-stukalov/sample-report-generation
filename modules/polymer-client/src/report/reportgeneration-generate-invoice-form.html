@@ -1,0 +1,70 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html"> 
+<link rel="import" href="../../bower_components/cuba-app/cuba-localize-behavior.html"> 
+<link rel="import" href="../../bower_components/cuba-form/cuba-service-form.html"> 
+<link rel="import" href="../../bower_components/cuba-data/cuba-entities.html">
+<link rel="import" href="../../bower_components/cuba-styles/cuba-styles.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html"> 
+<link rel="import" href="../../bower_components/paper-button/paper-button.html"> 
+<link rel="import" href="../../bower_components/vaadin-combo-box/vaadin-combo-box.html">
+<link rel="import" href="../shared-styles.html">
+<dom-module id="reportgeneration-generate-invoice-form"> 
+  <template> 
+    <style include="cuba-styles"></style> 
+    <style include="shared-styles"></style> 
+    <style>
+      :host {
+        display: block;
+      }
+      paper-card {
+        display: block;
+      }
+    </style>
+
+    <cuba-entities entity-name="reportgeneration$Order" view="_local" data="{{orders}}"></cuba-entities>
+
+    <paper-card heading="Generate Invoice">
+      <div class="card-content"> 
+        <cuba-service-form id="form" service-name="reportgeneration_ReportingRestService" method="generateInvoice" server-errors="{{serverErrors}}" params="[[serviceParams]]"> 
+          <vaadin-combo-box label="Order"
+                            items="[[orders]]"
+                            item-value-path="id"
+                            item-label-path="number"
+                            value="{{serviceParams.orderId}}"></vaadin-combo-box>
+          <paper-input value="{{serviceParams.fileName}}"
+                       label="File name"
+                       error-message="[[serverErrors.fileName]]"
+                       invalid="[[_isInvalid(serverErrors.fileName)]]">
+          </paper-input> 
+        </cuba-service-form> 
+      </div> 
+      <div class="card-actions"> 
+        <paper-button on-tap="_submit">
+           [[msg('Submit')]] 
+        </paper-button> 
+      </div> 
+    </paper-card> 
+  </template> 
+  <script>
+    Polymer({
+      is: 'reportgeneration-generate-invoice-form',
+      behaviors: [CubaLocalizeBehavior],
+      properties: {
+      
+        serviceParams: {
+          type: Object,
+          value: {
+            orderId: null,
+            fileName: null
+          }
+        }
+      
+      },
+      _submit: function() {
+        this.$.form.submit();
+      },
+      _isInvalid: function(err) {
+        return typeof err !== 'undefined';
+      }
+    });
+  </script> 
+</dom-module>
