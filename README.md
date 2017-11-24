@@ -16,7 +16,7 @@ Useful links:
 - [Files Downloading](https://doc.cuba-platform.com/manual-6.6/rest_api_v2_ex_file_download.html)
 
 #### Using from Polymer client
-Polymer client module contains a demonstration how to invoke ReportingRestService to generate report and how to provide a link for downloading the result from the File Storage. 
+The Polymer client module contains a showcase of how to invoke ReportingRestService to generate a report and how to provide a link for downloading the result from the File Storage. 
 See `modules/polymer-client/src/report/reportgeneration-generate-invoice-form.html` component.
 
 #### QR Code support
