@@ -8,4 +8,8 @@
                 previewMode="true"
                 reference="com/company/sample/report/web/util_screens/qr-code-screen.xml"/>
     </screenDesigner>
+    <functionalitySettings>
+        <functionality id="oneToOneIndex"
+                       state="ENABLE"/>
+    </functionalitySettings>
 </studio>

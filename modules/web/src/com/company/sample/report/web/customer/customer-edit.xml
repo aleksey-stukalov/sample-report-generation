@@ -30,9 +30,12 @@
             <groupBox id="groupBoxLogo"
                       caption="Company logo"
                       spacing="true">
-                <embedded id="imgLogo"
-                          align="TOP_CENTER"
-                          height="200px"/>
+                <image id="img"
+                       datasource="customerDs"
+                       height="200px"
+                       property="logo"
+                       scaleMode="SCALE_DOWN"
+                       width="200px"/>
                 <upload id="customerUpload"
                         accept="*.png,*.jpg"
                         align="MIDDLE_CENTER"
