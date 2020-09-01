@@ -6,6 +6,7 @@
 build/*
 deploy/*
 !deploy/tomcat/work/app-core/filestorage/*
+!deploy/app_home
 !deploy/hsqldb
 modules/*/build/*
 out

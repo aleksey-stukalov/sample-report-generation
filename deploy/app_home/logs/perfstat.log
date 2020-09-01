@@ -1,0 +1,80 @@
+Performance Statistics   2020-09-01 15:58:00 - 2020-09-01 15:59:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                1,2           0           4         0,7          19
+Messages.searchClasspath                                 0,2           0          38         1,8         510
+Messages.searchFiles                                     0,0           0          17         0,8         510
+Metadata.replaceExtendedMetaClasses                      1,5           1           2         0,5           2
+ViewRepository.init.ViewRepositoryImpl                  17,0          17          17         0,0           1
+WebJARs                                                 35,0          35          35         0,0           1
+
+Performance Statistics   2020-09-01 15:59:00 - 2020-09-01 16:00:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,3           0           4         0,8          87
+Messages.searchClasspath                                 0,0           0          21         0,4        8194
+Messages.searchFiles                                     0,0           0          17         0,2        8194
+Reporting#[XSLX                                       3951,0        3951        3951         0,0           1
+ViewRepository.init.ViewRepositoryClientImpl            19,0          19          19         0,0           1
+
+Performance Statistics   2020-09-01 16:00:00 - 2020-09-01 16:01:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,4           0           3         0,9          11
+Messages.searchClasspath                                 0,0           0           0         0,0         290
+Messages.searchFiles                                     0,0           0           0         0,0         290
+
+Performance Statistics   2020-09-01 16:01:00 - 2020-09-01 16:02:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2020-09-01 16:02:00 - 2020-09-01 16:03:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2020-09-01 16:03:00 - 2020-09-01 16:04:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2020-09-01 16:04:00 - 2020-09-01 16:05:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,0           0           0         0,0           8
+Messages.searchClasspath                                 0,0           0           0         0,0          16
+Messages.searchFiles                                     0,0           0           0         0,0          16
+
+Performance Statistics   2020-09-01 16:06:00 - 2020-09-01 16:07:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,2           0           1         0,4          18
+Messages.searchClasspath                                 0,1           0           7         0,7         216
+Messages.searchFiles                                     0,2           0          38         2,7         216
+Metadata.replaceExtendedMetaClasses                      1,0           1           1         0,0           2
+WebJARs                                                 10,0          10          10         0,0           1
+
+Performance Statistics   2020-09-01 16:07:00 - 2020-09-01 16:08:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,8           0           5         1,4          16
+Messages.searchClasspath                                 0,0           0           2         0,1        1536
+Messages.searchFiles                                     0,0           0           0         0,0        1536
+ViewRepository.init.ViewRepositoryClientImpl            14,0          14          14         0,0           1
+ViewRepository.init.ViewRepositoryImpl                  17,0          17          17         0,0           1
+
+Performance Statistics   2020-09-01 16:09:00 - 2020-09-01 16:10:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,9           0           4         1,0          27
+Messages.searchClasspath                                 0,0           0          34         0,9        1606
+Messages.searchFiles                                     0,0           0          11         0,3        1606
+Metadata.replaceExtendedMetaClasses                      1,0           1           1         0,0           2
+ViewRepository.init.ViewRepositoryClientImpl            14,0          14          14         0,0           1
+ViewRepository.init.ViewRepositoryImpl                  23,0          23          23         0,0           1
+WebJARs                                                 11,0          11          11         0,0           1
+
+Performance Statistics   2020-09-01 16:10:00 - 2020-09-01 16:11:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,0           0           0         0,0           4
+Messages.searchClasspath                                 0,0           0           0         0,0          16
+Messages.searchFiles                                     0,0           0           0         0,0          16
+
+Performance Statistics   2020-09-01 16:11:00 - 2020-09-01 16:12:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2020-09-01 16:12:00 - 2020-09-01 16:13:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+
+Performance Statistics   2020-09-01 16:13:00 - 2020-09-01 16:14:00
+Tag                                                  Avg(ms)         Min         Max     Std Dev       Count
+LoadClass                                                0,0           0           0         0,0           4
+

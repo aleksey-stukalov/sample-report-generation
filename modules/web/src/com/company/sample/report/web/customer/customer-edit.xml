@@ -41,7 +41,6 @@
                         align="MIDDLE_CENTER"
                         clearButtonIcon="icons/close.png"
                         datasource="customerDs"
-                        dropZone="groupBoxLogo"
                         fileStoragePutMode="IMMEDIATE"
                         property="logo"
                         showClearButton="true"
