@@ -1,8 +1,8 @@
 rootProject.name = 'sample-report-generation'
 def modulePrefix = 'app'
-include(":${modulePrefix}-global" , ":${modulePrefix}-core" , ":${modulePrefix}-gui" , ":${modulePrefix}-web" , ":${modulePrefix}-polymer-client" )
+include(":${modulePrefix}-global" , ":${modulePrefix}-core" , ":${modulePrefix}-gui" , ":${modulePrefix}-web" , ":${modulePrefix}-front" )
 project(":${modulePrefix}-global" ).projectDir = new File(settingsDir, 'modules/global')
 project(":${modulePrefix}-core" ).projectDir = new File(settingsDir, 'modules/core')
 project(":${modulePrefix}-gui" ).projectDir = new File(settingsDir, 'modules/gui')
 project(":${modulePrefix}-web" ).projectDir = new File(settingsDir, 'modules/web')
-project(":${modulePrefix}-polymer-client" ).projectDir = new File(settingsDir, 'modules/polymer-client')
+project(":${modulePrefix}-front" ).projectDir = new File(settingsDir, 'modules/front')
