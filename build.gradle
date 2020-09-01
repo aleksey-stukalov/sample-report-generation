@@ -207,6 +207,11 @@ configure(webModule) {
 configure(frontModule) {
     apply(plugin: 'cuba')
 
+    node {
+        version = '12.18.3'
+        download = true
+    }
+
     def frontAppDir = "${modulePrefix}-front"
 
     task installBowerPackages(type: NodeTask, dependsOn: npmInstall) {
