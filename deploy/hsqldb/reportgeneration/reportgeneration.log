@@ -1,277 +1,89 @@
-/*C40*/SET SCHEMA PUBLIC
+/*C2*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C41*/SET SCHEMA PUBLIC
+/*C3*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C42*/SET SCHEMA PUBLIC
+/*C4*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C43*/SET SCHEMA PUBLIC
+/*C5*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C44*/SET SCHEMA PUBLIC
+/*C7*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C45*/SET SCHEMA PUBLIC
+/*C6*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C47*/SET SCHEMA PUBLIC
+/*C8*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C46*/SET SCHEMA PUBLIC
+/*C9*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C48*/SET SCHEMA PUBLIC
+/*C10*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C49*/SET SCHEMA PUBLIC
+/*C11*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C50*/SET SCHEMA PUBLIC
+/*C12*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C51*/SET SCHEMA PUBLIC
-DELETE FROM SEC_SESSION_LOG WHERE ID='518e561c-57e6-6148-70f5-1db8e9de5cd0'
-INSERT INTO SEC_SESSION_LOG VALUES('518e561c-57e6-6148-70f5-1db8e9de5cd0',2,'2018-02-26 13:12:53.386000','admin','2020-09-01 13:49:14.254000','admin',NULL,NULL,'d65e452e-3840-4766-0d97-78e98ca9fb35',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,3,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.167 Safari/537.36','0:0:0:0:0:0:0:1','2018-02-26 13:12:53.384000','2020-09-01 13:49:14.227000','W','localhost:8080/app-core')
-COMMIT
-INSERT INTO SEC_SESSION_LOG VALUES('ad2e75bd-6f87-5a46-8ac1-f5fdb6b070b3',1,'2020-09-01 13:49:32.618000','admin','2020-09-01 13:49:32.618000',NULL,NULL,NULL,'7abdf454-746b-0abf-e3b9-1dd0b601ddcb',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,1,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 13:49:32.615000',NULL,'W','localhost:8080/app-core')
-COMMIT
-DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:49:42.911000',NULL,'localhost:8080/app-core',TRUE,NULL)
-COMMIT
-DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:50:42.915000',NULL,'localhost:8080/app-core',TRUE,NULL)
+/*C14*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C13*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C15*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C16*/SET SCHEMA PUBLIC
+DELETE FROM SEC_SESSION_LOG WHERE ID='70515287-a00a-1b5b-c40c-58c1cb49ba07'
+INSERT INTO SEC_SESSION_LOG VALUES('70515287-a00a-1b5b-c40c-58c1cb49ba07',2,'2020-09-01 14:06:04.496000','admin','2020-09-01 14:33:25.343000','admin',NULL,NULL,'cc35a527-b76c-d55b-17f3-022f1ad12f57',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,3,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 14:06:04.495000','2020-09-01 14:33:25.314000','W','localhost:8080/app-core')
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:51:42.917000',NULL,'localhost:8080/app-core',TRUE,NULL)
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:33:54.353000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:52:42.922000',NULL,'localhost:8080/app-core',TRUE,NULL)
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:34:54.355000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:53:17.280000',NULL,'localhost:8080/app-core',FALSE,NULL)
-COMMIT
-DISCONNECT
-/*C52*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C53*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C54*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C55*/SET SCHEMA PUBLIC
--- Rename VALUE columns\u000aalter table SEC_USER_SETTING add VALUE_ longvarchar
-alter table SYS_CONFIG add VALUE_ longvarchar
-alter table SEC_PERMISSION add VALUE_ integer
-DELETE FROM SEC_USER_SETTING WHERE ID='087f9f0a-101e-4cc6-733b-2fdbbd297238'
-DELETE FROM SEC_USER_SETTING WHERE ID='0f057143-9bea-5793-6030-a6204d53199c'
-DELETE FROM SEC_USER_SETTING WHERE ID='13d63434-e971-da2b-7ad7-6af603f9840f'
-DELETE FROM SEC_USER_SETTING WHERE ID='3b7d9ea3-2551-96bf-baf5-bb3a7f739fe8'
-DELETE FROM SEC_USER_SETTING WHERE ID='49ff021e-40c2-2ed1-d5a4-5ca3e60ed046'
-DELETE FROM SEC_USER_SETTING WHERE ID='59182ed1-a8db-9556-59d3-8afcabf4eac7'
-DELETE FROM SEC_USER_SETTING WHERE ID='59f512af-ea66-a608-d124-f7d859aba577'
-DELETE FROM SEC_USER_SETTING WHERE ID='8d8e7b83-1bac-d12f-3fc8-e0ec7c8bf738'
-DELETE FROM SEC_USER_SETTING WHERE ID='9244160f-9bc0-27e1-82c9-28816838c242'
-DELETE FROM SEC_USER_SETTING WHERE ID='93906c06-3a95-aa41-12e4-7e8583fda77e'
-DELETE FROM SEC_USER_SETTING WHERE ID='9a97ba89-afc3-fade-9ab8-4a337d2eedac'
-DELETE FROM SEC_USER_SETTING WHERE ID='a12bf6f2-22be-8ec1-acfd-2e929bddf25f'
-DELETE FROM SEC_USER_SETTING WHERE ID='b58cfd2c-9a24-c353-5c65-51087c969bf9'
-DELETE FROM SEC_USER_SETTING WHERE ID='b6d344be-8ce1-c1ab-0622-94d6edc63ed8'
-DELETE FROM SEC_USER_SETTING WHERE ID='c3b78b24-db23-7ff7-a625-79e264229ede'
-DELETE FROM SEC_USER_SETTING WHERE ID='d6fb90d5-6a02-711e-30be-72ffea105835'
-DELETE FROM SEC_USER_SETTING WHERE ID='df110134-b691-888b-0db9-5ea210067992'
-DELETE FROM SEC_USER_SETTING WHERE ID='e30946d3-b785-ab73-97ce-e3e85d5d9735'
-DELETE FROM SEC_USER_SETTING WHERE ID='ea2514c1-0e88-b87b-fc77-79c8c7c2ff0e'
-DELETE FROM SEC_USER_SETTING WHERE ID='ebda8dbb-9539-6d36-5e77-76a2c00c7239'
-DELETE FROM SEC_USER_SETTING WHERE ID='ee4aca17-8034-0c2c-279d-9d3171977093'
-DELETE FROM SEC_USER_SETTING WHERE ID='f96f4869-471d-58e3-35b7-bcb3efc194c4'
-INSERT INTO SEC_USER_SETTING VALUES('087f9f0a-101e-4cc6-733b-2fdbbd297238',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','entityLog','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="split1">\u000a      <position value="70.0" unit="%"/>\u000a    </component>\u000a    <component name="entityLogTable">\u000a      <columns>\u000a        <columns id="eventTs" visible="true"/>\u000a        <columns id="user" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a        <columns id="entity" visible="true"/>\u000a        <columns id="entityId" visible="true"/>\u000a      </columns>\u000a    </component>\u000a    <component name="entityLogAttrTable">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="value" visible="true"/>\u000a        <columns id="oldValue" visible="true"/>\u000a      </columns>\u000a    </component>\u000a    <component name="split2">\u000a      <position value="70.0" unit="%"/>\u000a    </component>\u000a    <component name="loggedEntityTable">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="auto" visible="true"/>\u000a        <columns id="manual" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component>\u000a    <component name="attributesBox">\u000a      <groupBox expanded="true"/>\u000a    </component>\u000a  </components>\u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="split1">\u000a      <position value="70.0" unit="%"/>\u000a    </component>\u000a    <component name="entityLogTable">\u000a      <columns>\u000a        <columns id="eventTs" visible="true"/>\u000a        <columns id="user" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a        <columns id="entity" visible="true"/>\u000a        <columns id="entityId" visible="true"/>\u000a      </columns>\u000a    </component>\u000a    <component name="entityLogAttrTable">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="value" visible="true"/>\u000a        <columns id="oldValue" visible="true"/>\u000a      </columns>\u000a    </component>\u000a    <component name="split2">\u000a      <position value="70.0" unit="%"/>\u000a    </component>\u000a    <component name="loggedEntityTable">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="auto" visible="true"/>\u000a        <columns id="manual" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component>\u000a    <component name="attributesBox">\u000a      <groupBox expanded="true"/>\u000a    </component>\u000a  </components>\u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('0f057143-9bea-5793-6030-a6204d53199c',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','report$Report.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="genericFilter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="table"> \u000a      <columns sortProperty="locName" sortAscending="true">\u000a        <columns id="group" width="161" visible="true"/>\u000a        <columns id="locName" width="276" visible="true"/>\u000a        <columns id="description" width="520" visible="true"/>\u000a        <columns id="code" width="267" visible="true"/>\u000a      </columns>\u000a      <groupProperties>\u000a        <property id="group"/>\u000a      </groupProperties>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="genericFilter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="table"> \u000a      <columns sortProperty="locName" sortAscending="true">\u000a        <columns id="group" width="161" visible="true"/>\u000a        <columns id="locName" width="276" visible="true"/>\u000a        <columns id="description" width="520" visible="true"/>\u000a        <columns id="code" width="267" visible="true"/>\u000a      </columns>\u000a      <groupProperties>\u000a        <property id="group"/>\u000a      </groupProperties>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('13d63434-e971-da2b-7ad7-6af603f9840f',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sec$User.edit','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="propertiesBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="split"> \u000a      <position value="50.0" unit="%"/> \u000a    </component>  \u000a    <component name="rolesTable"> \u000a      <columns>\u000a        <columns id="role.name" visible="true"/>\u000a        <columns id="role.locName" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="substTable"> \u000a      <columns>\u000a        <columns id="substitutedUser.login" visible="true"/>\u000a        <columns id="substitutedUser.name" visible="true"/>\u000a        <columns id="startDate" visible="true"/>\u000a        <columns id="endDate" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="propertiesBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="split"> \u000a      <position value="50.0" unit="%"/> \u000a    </component>  \u000a    <component name="rolesTable"> \u000a      <columns>\u000a        <columns id="role.name" visible="true"/>\u000a        <columns id="role.locName" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="substTable"> \u000a      <columns>\u000a        <columns id="substitutedUser.login" visible="true"/>\u000a        <columns id="substitutedUser.name" visible="true"/>\u000a        <columns id="startDate" visible="true"/>\u000a        <columns id="endDate" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('3b7d9ea3-2551-96bf-baf5-bb3a7f739fe8',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sec$Group.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="split"> \u000a      <position value="30.0" unit="%"/> \u000a    </component>  \u000a    <component name="filterWithoutId"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded/> \u000a    </component>  \u000a    <component name="usersTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="login" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="constraintsTable"> \u000a      <columns> \u000a        <columns id="entityName" visible="true"/>  \u000a        <columns id="isActive" visible="true"/>  \u000a        <columns id="operationType" visible="true"/>  \u000a        <columns id="joinClause" width="200" visible="true"/>  \u000a        <columns id="whereClause" width="200" visible="true"/>  \u000a        <columns id="groovyScript" width="200" visible="true"/> \u000a      </columns> \u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="split"> \u000a      <position value="30.0" unit="%"/> \u000a    </component>  \u000a    <component name="filterWithoutId"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded/> \u000a    </component>  \u000a    <component name="usersTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="login" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="constraintsTable"> \u000a      <columns> \u000a        <columns id="entityName" visible="true"/>  \u000a        <columns id="isActive" visible="true"/>  \u000a        <columns id="operationType" visible="true"/>  \u000a        <columns id="joinClause" width="200" visible="true"/>  \u000a        <columns id="whereClause" width="200" visible="true"/>  \u000a        <columns id="groovyScript" width="200" visible="true"/> \u000a      </columns> \u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('49ff021e-40c2-2ed1-d5a4-5ca3e60ed046',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','report$ReportTemplate.edit','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="chartEdit.seriesBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="chartEdit.seriesTable"> \u000a      <columns sortProperty="valueField" sortAscending="true">\u000a        <columns id="name" visible="true"/>\u000a        <columns id="valueField" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a        <columns id="colorField" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="chartEdit.seriesBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="chartEdit.seriesTable"> \u000a      <columns sortProperty="valueField" sortAscending="true">\u000a        <columns id="name" visible="true"/>\u000a        <columns id="valueField" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a        <columns id="colorField" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('59182ed1-a8db-9556-59d3-8afcabf4eac7',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','reportgeneration$Product.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="productsTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="price" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="productsTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="price" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('59f512af-ea66-a608-d124-f7d859aba577',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sec$Role.edit','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="roleGroupBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="description"/>  \u000a    <component name="screensTabFrame.WebSplitPanel"> \u000a      <position value="80.0" unit="%"/> \u000a    </component>  \u000a    <component name="screensTabFrame.screenPermissionsTree"> \u000a      <columns>\u000a        <columns id="caption" visible="true"/>\u000a        <columns id="permissionVariant" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="screensTabFrame.screensEditPane"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="entitiesTabFrame.contentSplit"> \u000a      <position value="80.0" unit="%"/> \u000a    </component>  \u000a    <component name="entitiesTabFrame.entityPermissionsTable"> \u000a      <columns> \u000a        <columns id="localName" width="300" visible="true"/>  \u000a        <columns id="metaClassName" width="300" visible="true"/>  \u000a        <columns id="createPermissionVariant" visible="true"/>  \u000a        <columns id="readPermissionVariant" visible="true"/>  \u000a        <columns id="updatePermissionVariant" visible="true"/>  \u000a        <columns id="deletePermissionVariant" visible="true"/> \u000a      </columns> \u000a    </component>  \u000a    <component name="entitiesTabFrame.editPane"> \u000a      <groupBox expanded="true"/> \u000a    </component>  \u000a    <component name="attributesTabFrame.contentSplit"> \u000a      <position value="60.0" unit="%"/> \u000a    </component>  \u000a    <component name="attributesTabFrame.propertyPermissionsTable"> \u000a      <columns>\u000a        <columns id="localName" width="300" visible="true"/>\u000a        <columns id="metaClassName" width="300" visible="true"/>\u000a        <columns id="permissionsInfo" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="attributesTabFrame.editPane"> \u000a      <groupBox expanded="true"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="roleGroupBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="description"/>  \u000a    <component name="screensTabFrame.WebSplitPanel"> \u000a      <position value="80.0" unit="%"/> \u000a    </component>  \u000a    <component name="screensTabFrame.screenPermissionsTree"> \u000a      <columns>\u000a        <columns id="caption" visible="true"/>\u000a        <columns id="permissionVariant" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="screensTabFrame.screensEditPane"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="entitiesTabFrame.contentSplit"> \u000a      <position value="80.0" unit="%"/> \u000a    </component>  \u000a    <component name="entitiesTabFrame.entityPermissionsTable"> \u000a      <columns> \u000a        <columns id="localName" width="300" visible="true"/>  \u000a        <columns id="metaClassName" width="300" visible="true"/>  \u000a        <columns id="createPermissionVariant" visible="true"/>  \u000a        <columns id="readPermissionVariant" visible="true"/>  \u000a        <columns id="updatePermissionVariant" visible="true"/>  \u000a        <columns id="deletePermissionVariant" visible="true"/> \u000a      </columns> \u000a    </component>  \u000a    <component name="entitiesTabFrame.editPane"> \u000a      <groupBox expanded="true"/> \u000a    </component>  \u000a    <component name="attributesTabFrame.contentSplit"> \u000a      <position value="60.0" unit="%"/> \u000a    </component>  \u000a    <component name="attributesTabFrame.propertyPermissionsTable"> \u000a      <columns>\u000a        <columns id="localName" width="300" visible="true"/>\u000a        <columns id="metaClassName" width="300" visible="true"/>\u000a        <columns id="permissionsInfo" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="attributesTabFrame.editPane"> \u000a      <groupBox expanded="true"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('8d8e7b83-1bac-d12f-3fc8-e0ec7c8bf738',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','commonLookup','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="table"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="billingAddress" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="table"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="billingAddress" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('9244160f-9bc0-27e1-82c9-28816838c242',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sys$CategoryAttribute.edit','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="targetScreensTable">\u000a      <columns>\u000a        <columns id="screen" visible="true"/>\u000a        <columns id="component" visible="true"/>\u000a      </columns>\u000a    </component>\u000a  </components>\u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="targetScreensTable">\u000a      <columns>\u000a        <columns id="screen" visible="true"/>\u000a        <columns id="component" visible="true"/>\u000a      </columns>\u000a    </component>\u000a  </components>\u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('93906c06-3a95-aa41-12e4-7e8583fda77e',NULL,NULL,'83674bdb-a07e-48f0-1379-a6e279e99420','W','reportgeneration$Order.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="split"> \u000a      <position value="50.0" unit="%"/> \u000a    </component>  \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="ordersTable"> \u000a      <columns>\u000a        <columns id="number" visible="true"/>\u000a        <columns id="customer" visible="true"/>\u000a        <columns id="date" visible="true"/>\u000a        <columns id="totalPrice" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component>  \u000a    <component name="itemsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="itemsTable"> \u000a      <columns>\u000a        <columns id="product" visible="true"/>\u000a        <columns id="quantity" visible="true"/>\u000a        <columns id="subTotal" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="split"> \u000a      <position value="50.0" unit="%"/> \u000a    </component>  \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="ordersTable"> \u000a      <columns>\u000a        <columns id="number" visible="true"/>\u000a        <columns id="customer" visible="true"/>\u000a        <columns id="date" visible="true"/>\u000a        <columns id="totalPrice" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component>  \u000a    <component name="itemsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="itemsTable"> \u000a      <columns>\u000a        <columns id="product" visible="true"/>\u000a        <columns id="quantity" visible="true"/>\u000a        <columns id="subTotal" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('9a97ba89-afc3-fade-9ab8-4a337d2eedac',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sec$Role.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="rolesTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="locName" visible="true"/>\u000a        <columns id="description" visible="true"/>\u000a        <columns id="defaultRole" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="rolesTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="locName" visible="true"/>\u000a        <columns id="description" visible="true"/>\u000a        <columns id="defaultRole" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('a12bf6f2-22be-8ec1-acfd-2e929bddf25f',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','reportgeneration$Order.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="split"> \u000a      <position value="50.951374" unit="%"/> \u000a    </component>  \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="ordersTable"> \u000a      <columns sortProperty="date" sortAscending="true">\u000a        <columns id="date" visible="true"/>\u000a        <columns id="number" visible="true"/>\u000a        <columns id="customer" visible="true"/>\u000a        <columns id="totalPrice" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component>  \u000a    <component name="itemsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="itemsTable"> \u000a      <columns>\u000a        <columns id="product" visible="true"/>\u000a        <columns id="product.price" visible="true"/>\u000a        <columns id="quantity" visible="true"/>\u000a        <columns id="subTotal" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="split"> \u000a      <position value="50.951374" unit="%"/> \u000a    </component>  \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="ordersTable"> \u000a      <columns sortProperty="date" sortAscending="true">\u000a        <columns id="date" visible="true"/>\u000a        <columns id="number" visible="true"/>\u000a        <columns id="customer" visible="true"/>\u000a        <columns id="totalPrice" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component>  \u000a    <component name="itemsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="itemsTable"> \u000a      <columns>\u000a        <columns id="product" visible="true"/>\u000a        <columns id="product.price" visible="true"/>\u000a        <columns id="quantity" visible="true"/>\u000a        <columns id="subTotal" visible="true"/>\u000a      </columns>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('b58cfd2c-9a24-c353-5c65-51087c969bf9',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','reportgeneration$Customer.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="customersTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="billingAddress" visible="true"/>\u000a        <columns id="+1NumberOfOffices" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="customersTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="billingAddress" visible="true"/>\u000a        <columns id="+1NumberOfOffices" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('b6d344be-8ce1-c1ab-0622-94d6edc63ed8',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','report$Report.edit','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="generalFrame.hSplit"> \u000a      <position value="22.071428" unit="%"/> \u000a    </component>  \u000a    <component name="generalFrame.treeBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="generalFrame.bandDetailsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="generalFrame.bandEditor.split"> \u000a      <position value="34.375" unit="%"/> \u000a    </component>  \u000a    <component name="generalFrame.bandEditor.dataSets"> \u000a      <columns sortProperty="type" sortAscending="true">\u000a        <columns id="name" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="parametersFrame.inputParametersTable"> \u000a      <columns>\u000a        <columns id="locName" visible="true"/>\u000a        <columns id="alias" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a        <columns id="required" visible="true"/>\u000a        <columns id="validationOn" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="formatsFrame.valuesFormatsTable"> \u000a      <columns>\u000a        <columns id="valueName" visible="true"/>\u000a        <columns id="formatString" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="templatesFrame.templatesTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="code" visible="true"/>\u000a        <columns id="reportOutputType" visible="true"/>\u000a        <columns id="customDefinition" visible="true"/>\u000a        <columns id="alterable" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="securityFrame.WebSplitPanel"> \u000a      <position value="50.0" unit="%"/> \u000a    </component>  \u000a    <component name="securityFrame.addRoleGroupBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="securityFrame.rolesTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="securityFrame.addScreenGroupBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="securityFrame.screenTable"> \u000a      <columns>\u000a        <columns id="screenId" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="localesFrame.localeTextField"/>  \u000a    <component name="parametersFrame.validationScriptGroupBox"> \u000a      <groupBox expanded="false"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="generalFrame.hSplit"> \u000a      <position value="22.071428" unit="%"/> \u000a    </component>  \u000a    <component name="generalFrame.treeBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="generalFrame.bandDetailsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="generalFrame.bandEditor.split"> \u000a      <position value="34.375" unit="%"/> \u000a    </component>  \u000a    <component name="generalFrame.bandEditor.dataSets"> \u000a      <columns sortProperty="type" sortAscending="true">\u000a        <columns id="name" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="parametersFrame.inputParametersTable"> \u000a      <columns>\u000a        <columns id="locName" visible="true"/>\u000a        <columns id="alias" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a        <columns id="required" visible="true"/>\u000a        <columns id="validationOn" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="formatsFrame.valuesFormatsTable"> \u000a      <columns>\u000a        <columns id="valueName" visible="true"/>\u000a        <columns id="formatString" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="templatesFrame.templatesTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="code" visible="true"/>\u000a        <columns id="reportOutputType" visible="true"/>\u000a        <columns id="customDefinition" visible="true"/>\u000a        <columns id="alterable" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="securityFrame.WebSplitPanel"> \u000a      <position value="50.0" unit="%"/> \u000a    </component>  \u000a    <component name="securityFrame.addRoleGroupBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="securityFrame.rolesTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="securityFrame.addScreenGroupBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="securityFrame.screenTable"> \u000a      <columns>\u000a        <columns id="screenId" visible="true"/>\u000a      </columns>\u000a    </component>  \u000a    <component name="localesFrame.localeTextField"/>  \u000a    <component name="parametersFrame.validationScriptGroupBox"> \u000a      <groupBox expanded="false"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('c3b78b24-db23-7ff7-a625-79e264229ede',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sys$Category.edit','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="localizedGroupBox">\u000a      <groupBox expanded="false"/>\u000a    </component>\u000a    <component name="categoryAttrsFrame.categoryAttrsTable" textSelection="false" presentation="">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="code" visible="true"/>\u000a        <columns id="dataType" visible="true"/>\u000a        <columns id="required" visible="true"/>\u000a        <columns id="defaultValue" visible="true"/>\u000a      </columns>\u000a    </component>\u000a  </components>\u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="localizedGroupBox">\u000a      <groupBox expanded="false"/>\u000a    </component>\u000a    <component name="categoryAttrsFrame.categoryAttrsTable" textSelection="false" presentation="">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="code" visible="true"/>\u000a        <columns id="dataType" visible="true"/>\u000a        <columns id="required" visible="true"/>\u000a        <columns id="defaultValue" visible="true"/>\u000a      </columns>\u000a    </component>\u000a  </components>\u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('d6fb90d5-6a02-711e-30be-72ffea105835',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sec$User.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="genericFilter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="usersTable" textSelection="false" presentation=""> \u000a      <columns>\u000a        <columns id="login" visible="true"/>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="position" visible="true"/>\u000a        <columns id="group" visible="true"/>\u000a        <columns id="email" visible="true"/>\u000a        <columns id="timeZone" visible="true"/>\u000a        <columns id="active" visible="true"/>\u000a        <columns id="changePasswordAtNextLogon" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="genericFilter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="usersTable" textSelection="false" presentation=""> \u000a      <columns>\u000a        <columns id="login" visible="true"/>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="position" visible="true"/>\u000a        <columns id="group" visible="true"/>\u000a        <columns id="email" visible="true"/>\u000a        <columns id="timeZone" visible="true"/>\u000a        <columns id="active" visible="true"/>\u000a        <columns id="changePasswordAtNextLogon" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('df110134-b691-888b-0db9-5ea210067992',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sec$Role.lookup','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="rolesTable">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="locName" visible="true"/>\u000a        <columns id="description" visible="true"/>\u000a        <columns id="defaultRole" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a      </columns>\u000a    </component>\u000a  </components>\u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="rolesTable">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="locName" visible="true"/>\u000a        <columns id="description" visible="true"/>\u000a        <columns id="defaultRole" visible="true"/>\u000a        <columns id="type" visible="true"/>\u000a      </columns>\u000a    </component>\u000a  </components>\u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('e30946d3-b785-ab73-97ce-e3e85d5d9735',NULL,NULL,'83674bdb-a07e-48f0-1379-a6e279e99420','W','reportgeneration$Product.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="productsTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="filter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="productsTable"> \u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('ea2514c1-0e88-b87b-fc77-79c8c7c2ff0e',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','report$Report.run','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="reportsTable"> \u000a      <columns>\u000a        <columns id="group" width="66" visible="true"/>\u000a        <columns id="locName" width="209" visible="true"/>\u000a        <columns id="description" width="679" visible="true"/>\u000a        <columns id="code" width="105" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="reportsTable"> \u000a      <columns>\u000a        <columns id="group" width="66" visible="true"/>\u000a        <columns id="locName" width="209" visible="true"/>\u000a        <columns id="description" width="679" visible="true"/>\u000a        <columns id="code" width="105" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('ebda8dbb-9539-6d36-5e77-76a2c00c7239',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','reportgeneration$Customer.edit','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="WebGroupBox"> \u000a      <groupBox expanded="true"/> \u000a    </component>  \u000a    <component name="groupBoxLogo"> \u000a      <groupBox expanded="true"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="WebGroupBox"> \u000a      <groupBox expanded="true"/> \u000a    </component>  \u000a    <component name="groupBoxLogo"> \u000a      <groupBox expanded="true"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('ee4aca17-8034-0c2c-279d-9d3171977093',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','report$showChart','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="reportParamsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="chartBox"> \u000a      <groupBox expanded="true"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="reportParamsBox"> \u000a      <groupBox expanded="true"/>\u000a    </component>  \u000a    <component name="chartBox"> \u000a      <groupBox expanded="true"/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-INSERT INTO SEC_USER_SETTING VALUES('f96f4869-471d-58e3-35b7-bcb3efc194c4',NULL,NULL,'60885987-1b61-4247-94c7-dff348347f93','W','sec$SessionLogEntry.browse','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="sessFilter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="sessionsTable"> \u000a      <columns>\u000a        <columns id="sessionId" visible="true"/>\u000a        <columns id="user" visible="true"/>\u000a        <columns id="substitutedUser" visible="true"/>\u000a        <columns id="lastAction" visible="true"/>\u000a        <columns id="address" visible="true"/>\u000a        <columns id="clientType" visible="true"/>\u000a        <columns id="server" visible="true"/>\u000a        <columns id="startedTs" visible="true"/>\u000a        <columns id="finishedTs" visible="true"/>\u000a        <columns id="clientInfo" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a','<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings> \u000a  <components> \u000a    <component name="sessFilter"> \u000a      <defaultFilter/>  \u000a      <groupBoxExpanded>true</groupBoxExpanded> \u000a    </component>  \u000a    <component name="sessionsTable"> \u000a      <columns>\u000a        <columns id="sessionId" visible="true"/>\u000a        <columns id="user" visible="true"/>\u000a        <columns id="substitutedUser" visible="true"/>\u000a        <columns id="lastAction" visible="true"/>\u000a        <columns id="address" visible="true"/>\u000a        <columns id="clientType" visible="true"/>\u000a        <columns id="server" visible="true"/>\u000a        <columns id="startedTs" visible="true"/>\u000a        <columns id="finishedTs" visible="true"/>\u000a        <columns id="clientInfo" visible="true"/>\u000a      </columns>\u000a      <groupProperties/>\u000a    </component> \u000a  </components> \u000a</settings>\u000a')
-COMMIT
-DELETE FROM SYS_CONFIG WHERE ID='605a7e5e-6d5e-e98a-7905-3855e3a0e43a'
-INSERT INTO SYS_CONFIG VALUES('605a7e5e-6d5e-e98a-7905-3855e3a0e43a','2017-08-24 17:58:35.947000','admin',1,'2017-08-24 17:58:35.947000',NULL,'cuba.userSessionLogEnabled','true','true')
-COMMIT
-DELETE FROM SEC_PERMISSION WHERE ID='230d68d3-de6d-df86-6061-01368ff45722'
-DELETE FROM SEC_PERMISSION WHERE ID='2e0d8d25-29e9-ac4c-b963-e6329b710a96'
-DELETE FROM SEC_PERMISSION WHERE ID='47636412-21ef-0a87-7339-66732aef47b9'
-DELETE FROM SEC_PERMISSION WHERE ID='4b871071-ed3c-d489-4513-96f9ae66497c'
-DELETE FROM SEC_PERMISSION WHERE ID='53703d2a-4e88-1856-6613-58d4c1e7093d'
-DELETE FROM SEC_PERMISSION WHERE ID='606f89f5-086e-816a-c4f0-99b8274083f8'
-DELETE FROM SEC_PERMISSION WHERE ID='6125358a-162e-9119-ba2f-a8c4148e51ca'
-DELETE FROM SEC_PERMISSION WHERE ID='e9e8fab4-208f-8ee0-28e2-631b9fab9d87'
-INSERT INTO SEC_PERMISSION VALUES('230d68d3-de6d-df86-6061-01368ff45722','2017-04-07 15:30:34.423000','admin',1,'2017-04-07 15:30:34.423000',NULL,NULL,NULL,20,'reportgeneration$Product:delete',0,'5f656e94-f78c-327b-bdc9-62458e62411f',0)
-INSERT INTO SEC_PERMISSION VALUES('2e0d8d25-29e9-ac4c-b963-e6329b710a96','2017-04-07 15:30:34.424000','admin',1,'2017-04-07 15:30:34.424000',NULL,NULL,NULL,10,'reportgeneration$Customer.browse',0,'5f656e94-f78c-327b-bdc9-62458e62411f',0)
-INSERT INTO SEC_PERMISSION VALUES('47636412-21ef-0a87-7339-66732aef47b9','2017-04-07 15:30:34.423000','admin',1,'2017-04-07 15:30:34.423000',NULL,NULL,NULL,20,'reportgeneration$Product:read',1,'5f656e94-f78c-327b-bdc9-62458e62411f',1)
-INSERT INTO SEC_PERMISSION VALUES('4b871071-ed3c-d489-4513-96f9ae66497c','2017-04-07 15:30:34.423000','admin',1,'2017-04-07 15:30:34.423000',NULL,NULL,NULL,20,'reportgeneration$Product:create',0,'5f656e94-f78c-327b-bdc9-62458e62411f',0)
-INSERT INTO SEC_PERMISSION VALUES('53703d2a-4e88-1856-6613-58d4c1e7093d','2017-04-07 15:30:34.424000','admin',1,'2017-04-07 15:30:34.424000',NULL,NULL,NULL,10,'reports',0,'5f656e94-f78c-327b-bdc9-62458e62411f',0)
-INSERT INTO SEC_PERMISSION VALUES('606f89f5-086e-816a-c4f0-99b8274083f8','2017-04-07 15:30:34.424000','admin',1,'2017-04-07 15:30:34.424000',NULL,NULL,NULL,20,'reportgeneration$Product:update',0,'5f656e94-f78c-327b-bdc9-62458e62411f',0)
-INSERT INTO SEC_PERMISSION VALUES('6125358a-162e-9119-ba2f-a8c4148e51ca','2017-04-07 15:30:34.424000','admin',1,'2017-04-07 15:30:34.424000',NULL,NULL,NULL,10,'administration',0,'5f656e94-f78c-327b-bdc9-62458e62411f',0)
-INSERT INTO SEC_PERMISSION VALUES('e9e8fab4-208f-8ee0-28e2-631b9fab9d87','2017-04-07 15:30:34.423000','admin',1,'2017-04-07 15:30:34.423000',NULL,NULL,NULL,30,'reportgeneration$Product:price',0,'5f656e94-f78c-327b-bdc9-62458e62411f',0)
-COMMIT
-INSERT INTO SYS_DB_CHANGELOG VALUES('10-cuba/update/hsql/18/180312-renameColumns.sql','2020-09-01 13:55:11.160000',0)
-COMMIT
-alter table SYS_SENDING_MESSAGE add BODY_CONTENT_TYPE varchar(50)
-INSERT INTO SYS_DB_CHANGELOG VALUES('10-cuba/update/hsql/18/180321-addContentBodyTypeColumnToSendingMessage.sql','2020-09-01 13:55:11.161000',0)
-COMMIT
-INSERT INTO SYS_DB_CHANGELOG VALUES('10-cuba/update/hsql/18/180331-truncateQueryResultTable.sql','2020-09-01 13:55:11.164000',0)
-COMMIT
-DISCONNECT
-/*C56*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C57*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C58*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C59*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C61*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C60*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C62*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C63*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C64*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C65*/SET SCHEMA PUBLIC
-DELETE FROM SEC_SESSION_LOG WHERE ID='ad2e75bd-6f87-5a46-8ac1-f5fdb6b070b3'
-INSERT INTO SEC_SESSION_LOG VALUES('ad2e75bd-6f87-5a46-8ac1-f5fdb6b070b3',2,'2020-09-01 13:49:32.618000','admin','2020-09-01 13:56:08.082000','admin',NULL,NULL,'7abdf454-746b-0abf-e3b9-1dd0b601ddcb',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,3,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 13:49:32.615000','2020-09-01 13:56:08.056000','W','localhost:8080/app-core')
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:35:54.362000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:56:37.155000',NULL,'localhost:8080/app-core',TRUE,NULL)
-COMMIT
-INSERT INTO SEC_SESSION_LOG VALUES('d027c954-4138-5d2e-f2b7-82deba4fdf07',1,'2020-09-01 13:57:15.226000','admin','2020-09-01 13:57:15.226000',NULL,NULL,NULL,'c1f78522-05a9-71a9-7fb8-db9c76168ca7',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,1,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 13:57:15.224000',NULL,'W','localhost:8080/app-core')
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:36:54.367000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:57:37.148000',NULL,'localhost:8080/app-core',TRUE,NULL)
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:37:54.373000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:57:56.033000',NULL,'localhost:8080/app-core',FALSE,NULL)
-COMMIT
-DISCONNECT
-/*C66*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C67*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C68*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C69*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C71*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C70*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C72*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C73*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C74*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C75*/SET SCHEMA PUBLIC
-DELETE FROM SEC_SESSION_LOG WHERE ID='d027c954-4138-5d2e-f2b7-82deba4fdf07'
-INSERT INTO SEC_SESSION_LOG VALUES('d027c954-4138-5d2e-f2b7-82deba4fdf07',2,'2020-09-01 13:57:15.226000','admin','2020-09-01 13:58:28.841000','admin',NULL,NULL,'c1f78522-05a9-71a9-7fb8-db9c76168ca7',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,3,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 13:57:15.224000','2020-09-01 13:58:28.824000','W','localhost:8080/app-core')
-COMMIT
-INSERT INTO SEC_SESSION_LOG VALUES('545921f9-b706-bc48-62f0-5da1420f6760',1,'2020-09-01 13:58:46.247000','admin','2020-09-01 13:58:46.247000',NULL,NULL,NULL,'6c0e02c9-07f5-9e8e-d858-e07a4f484479',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,1,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 13:58:46.244000',NULL,'W','localhost:8080/app-core')
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:38:54.375000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:58:58.011000',NULL,'localhost:8080/app-core',TRUE,NULL)
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:39:54.381000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 13:59:04.119000',NULL,'localhost:8080/app-core',FALSE,NULL)
-COMMIT
-DISCONNECT
-/*C76*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C77*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C78*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C79*/SET SCHEMA PUBLIC
--- add not null constraints for SYS_CONFIG\u000aalter table SYS_CONFIG alter column NAME set not null
-alter table SYS_CONFIG alter column VALUE_ set not null
-INSERT INTO SYS_DB_CHANGELOG VALUES('10-cuba/update/hsql/18/180704-addNotNullForConfig.sql','2020-09-01 14:02:58.234000',0)
-COMMIT
-alter table SEC_ENTITY_LOG add ENTITY_INSTANCE_NAME varchar(1000)
-INSERT INTO SYS_DB_CHANGELOG VALUES('10-cuba/update/hsql/19/190321-addEntityLogInstanceName.sql','2020-09-01 14:02:58.236000',0)
-COMMIT
-alter table REPORT_REPORT add REST_ACCESS boolean default false
-INSERT INTO SYS_DB_CHANGELOG VALUES('20-reports/update/hsql/18/180718-addRestAccessToReport.sql','2020-09-01 14:02:58.238000',0)
-COMMIT
-alter table REPORT_REPORT add IS_SYSTEM boolean default false
-INSERT INTO SYS_DB_CHANGELOG VALUES('20-reports/update/hsql/18/180730-addSystemToReport.sql','2020-09-01 14:02:58.240000',0)
-COMMIT
-DISCONNECT
-/*C80*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C81*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C82*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C83*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C85*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C84*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C86*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C87*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C88*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C89*/SET SCHEMA PUBLIC
-DELETE FROM SEC_SESSION_LOG WHERE ID='545921f9-b706-bc48-62f0-5da1420f6760'
-INSERT INTO SEC_SESSION_LOG VALUES('545921f9-b706-bc48-62f0-5da1420f6760',2,'2020-09-01 13:58:46.247000','admin','2020-09-01 14:03:38.488000','admin',NULL,NULL,'6c0e02c9-07f5-9e8e-d858-e07a4f484479',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,3,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 13:58:46.244000','2020-09-01 14:03:38.462000','W','localhost:8080/app-core')
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:40:54.386000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:04:07.518000',NULL,'localhost:8080/app-core',TRUE,NULL)
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:41:54.393000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
-INSERT INTO SEC_SESSION_LOG VALUES('273aaeb6-08af-e4f8-90e6-4bc68c0646f4',1,'2020-09-01 14:04:26.561000','admin','2020-09-01 14:04:26.561000',NULL,NULL,NULL,'a9a432db-01ed-4ae5-0d74-9d4b40400475',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,1,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 14:04:26.559000',NULL,'W','localhost:8080/app-core')
-COMMIT
-INSERT INTO SEC_USER_SETTING VALUES('b784ea76-caf5-f3c3-89a6-1856efe54cea','2020-09-01 14:04:33.017000','admin','60885987-1b61-4247-94c7-dff348347f93','W','aboutWindow',NULL,'<?xml version="1.0" encoding="UTF-8"?>\u000a\u000a<settings>\u000a  <components>\u000a    <component name="buildInfoTable">\u000a      <columns>\u000a        <columns id="name" visible="true"/>\u000a        <columns id="value" visible="true"/>\u000a      </columns>\u000a    </component>\u000a  </components>\u000a</settings>\u000a')
-COMMIT
-DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:05:00.308000',NULL,'localhost:8080/app-core',FALSE,NULL)
+INSERT INTO SEC_SESSION_LOG VALUES('392ef784-f478-980e-d02a-2b7325296a8c',1,'2020-09-01 14:42:48.160000','admin','2020-09-01 14:42:48.160000',NULL,NULL,NULL,'5ac4e25d-a2de-0f3a-fe3f-bef970a95099',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,1,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 14:42:48.159000',NULL,'W','localhost:8080/app-core')
 COMMIT
 DISCONNECT
-/*C90*/SET SCHEMA PUBLIC
+/*C17*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C91*/SET SCHEMA PUBLIC
+/*C18*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C92*/SET SCHEMA PUBLIC
+/*C19*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C93*/SET SCHEMA PUBLIC
+/*C20*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C95*/SET SCHEMA PUBLIC
+/*C22*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C94*/SET SCHEMA PUBLIC
+/*C21*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C96*/SET SCHEMA PUBLIC
+/*C23*/SET SCHEMA PUBLIC
 DISCONNECT
-/*C97*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C98*/SET SCHEMA PUBLIC
-DISCONNECT
-/*C99*/SET SCHEMA PUBLIC
-DELETE FROM SEC_SESSION_LOG WHERE ID='273aaeb6-08af-e4f8-90e6-4bc68c0646f4'
-INSERT INTO SEC_SESSION_LOG VALUES('273aaeb6-08af-e4f8-90e6-4bc68c0646f4',2,'2020-09-01 14:04:26.561000','admin','2020-09-01 14:05:25.084000','admin',NULL,NULL,'a9a432db-01ed-4ae5-0d74-9d4b40400475',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,3,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 14:04:26.559000','2020-09-01 14:05:25.058000','W','localhost:8080/app-core')
+/*C24*/SET SCHEMA PUBLIC
+DELETE FROM SEC_SESSION_LOG WHERE ID='392ef784-f478-980e-d02a-2b7325296a8c'
+INSERT INTO SEC_SESSION_LOG VALUES('392ef784-f478-980e-d02a-2b7325296a8c',2,'2020-09-01 14:42:48.160000','admin','2020-09-01 14:43:21.639000','admin',NULL,NULL,'5ac4e25d-a2de-0f3a-fe3f-bef970a95099',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,3,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 14:42:48.159000','2020-09-01 14:43:21.606000','W','localhost:8080/app-core')
+COMMIT
+INSERT INTO SEC_SESSION_LOG VALUES('31c54005-6208-ef87-968e-496fee3c1155',1,'2020-09-01 14:43:24.169000','admin','2020-09-01 14:43:24.169000',NULL,NULL,NULL,'5326dd42-9abc-5945-1649-efe3670f7ffa',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,1,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 14:43:24.168000',NULL,'W','localhost:8080/app-core')
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:05:54.093000',NULL,'localhost:8080/app-core',TRUE,NULL)
-COMMIT
-INSERT INTO SEC_SESSION_LOG VALUES('70515287-a00a-1b5b-c40c-58c1cb49ba07',1,'2020-09-01 14:06:04.496000','admin','2020-09-01 14:06:04.496000',NULL,NULL,NULL,'cc35a527-b76c-d55b-17f3-022f1ad12f57',NULL,'60885987-1b61-4247-94c7-dff348347f93',NULL,1,'Web (localhost:8080/app) Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36','0:0:0:0:0:0:0:1','2020-09-01 14:06:04.495000',NULL,'W','localhost:8080/app-core')
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:43:50.629000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DELETE FROM SYS_SERVER WHERE ID='9ce512b8-3e99-7f53-7e20-f3ceb84df599'
-INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:06:07.926000',NULL,'localhost:8080/app-core',FALSE,NULL)
+INSERT INTO SYS_SERVER VALUES('9ce512b8-3e99-7f53-7e20-f3ceb84df599','2017-02-07 22:05:12.170000',NULL,'2020-09-01 14:44:50.634000',NULL,'localhost:8080/app-core',TRUE,NULL)
 COMMIT
 DISCONNECT
